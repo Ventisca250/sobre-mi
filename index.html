@@ -3,115 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título de la página</title>
+    <title>Fátima - Sobre mí</title>
 </head>
 <body>
+<!--OTROS: <aside>: Contenido complementario (barra lateral, enlaces relacionados).-->
+    <header>
+        <!--que va en un header? Es el encabezado
+            Logo o título principal del sitio (<h1> si es el título de toda la página).
+            Menú de navegación (<nav> con <ul><li><a>…).
+            Elementos como buscadores, botones de inicio de sesión, etc.
+        -->
+        <h1>Sobre mí - Fátima</h1>
+        <nav>
+            <!--Bloque de enlaces de navegación.-->
+            <h2>Menú:</h2>
+            <ul>
+                <li><a href="#food">Comidas favoritas</a></li>
+                <li><a href="#hobbies">Mis hobbies</a></li>
+                <li><a href="#ej1">Ejercicio 1</a></li>
+                <li><a href="#proyectos">Mis proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <!--Ejercicio 2 y 3:-->
+    </header>
 
-    <title>Fátima</title>
+    <main>
+        <!--Que va en el main?
+            Contiene el contenido único y principal de la página.
+            Solo debe haber un <main> por página.
+            No incluye cosas que se repiten en todas las páginas (eso va en <header> o <footer>).
+            Dentro del <main> podés usar <section>, <article>, <h2>, <p>, etc.-->
+            
+        <!--Ejercicio 2 y 3:-->
 
-    <h1>¡Soy Fátima!</h1>
+        <h1>¡Soy Fátima!</h1>
 
-    <p>Mi nombre es Fátima, soy óptica y actualmente soy aspirante a programadora web. 
-        <br>Actualmente estoy aprendiendo sobre html con la IA
-    </p>
+        <p>Mi nombre es Fátima, soy óptica y actualmente soy aspirante a programadora web. Actualmente estoy aprendiendo sobre html con la IA</p>
 
-    <h2>Menú</h2>
+        <section  id="food">
+            <!--si podés ponerle un título que describa lo que contiene, probablemente sea un <section>.-->
+            <h2>Mis comidas favoritas son:</h2>
 
-    <ul>
-        <a href="#food"><li>Comidas favoritas</li></a>
-        <a href="#hobbies"><li>Mis hobbies</li></a>
-        <a href="#1"><li>Ejercicio 1</li></a>
-        <a href="#proyectos"><li>Mis proyectos</li></a>
-        <a href="#contacto"><li>Contacto</li></a>
-    </ul>
+            <ol>
+                <li>Pastel de papa</li>
+                <li>Ravioles a la parisien</li>
+                <li>Sanguchitos de miga de jamon y queso</li>
+                <li>Bizcochuelo con dulce de leche en el medio</li>
+                <li>Melón</li>
+            </ol>
+        </section>
 
-    <ol id="food">Mis comidas favoritas son:
-        <li>Pastel de papa</li>
-        <li>Ravioles a la parisien</li>
-        <li>Sanguchitos de miga de jamon y queso</li>
-        <li>Bizcochuelo con dulce de leche en el medio</li>
-        <li>Melón</li>
-    </ol>
-    
-    <ul id="hobbies">Mis hobbies o pasatiempos son:
-        <li>Encuadernaciones</li>
-        <li>Carpinteria</li>
-        <li>Videojuegos</li>
-        <li>Cantar</li>
-        <li>Libros</li>
-        <li>Mirar series, animes, peliculas</li>
-        <li>Escribir</li>
-        <li>Jugar con mis mascotas</li>
-        <li>Reposteria</li>
-        <li>Crear cosas</li>
-        <li>Hablar</li>
-    </ul>
+        <section  id="hobbies">
+            <h2>Mis hobbies o pasatiempos son:</h2>
+        
+            <ul>
+                <li>Encuadernaciones</li>
+                <li>Carpinteria</li>
+                <li>Videojuegos</li>
+                <li>Cantar</li>
+                <li>Libros</li>
+                <li>Mirar series, animes, peliculas</li>
+                <li>Escribir</li>
+                <li>Jugar con mis mascotas</li>
+                <li>Reposteria</li>
+                <li>Crear cosas</li>
+                <li>Hablar</li>
+            </ul>
+        </section>
+        
+        <div>
+            <!--Contenedor genérico sin significado semántico.
+            Se usa para:
+            Agrupar elementos solo por diseño/estilo, no por significado.
+            Aplicar clases o IDs para CSS o JavaScript.-->
+            <img src="images/amapola-roja.png" alt="Una foto de amapolas rojas">
 
-    <img src="images/amapola-roja.png" alt="Una foto de amapolas rojas">
+            <p>Una imagen que siento que me representa en gran medida</p>
 
-    <p>Una imagen que siento que me representa en gran medida</p>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ar.pinterest.com/&ved=2ahUKEwjftNrsjomPAxUMqZUCHbFQBJkQFnoECAoQAQ&usg=AOvVaw1FK4zBqw3EJ7TrDSTv3Q5d">Red Social Favorita</a>
+        </div>
 
-    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ar.pinterest.com/&ved=2ahUKEwjftNrsjomPAxUMqZUCHbFQBJkQFnoECAoQAQ&usg=AOvVaw1FK4zBqw3EJ7TrDSTv3Q5d">Red Social Favorita</a>
+        <article id="ej1">
+            <!--Para contenido independiente que tiene sentido por sí solo, incluso fuera del contexto de la página.
+            Ejemplos:
+            Una publicación de blog.
+            Una noticia.
+            Una receta.
+            Diferencia con <section>:
+            <section> agrupa partes de un tema mayor.
+            <article> es una pieza completa que podría publicarse sola.-->
+            <p>A continuación el ejercicio numero 1:</p>
 
+            <h1>No quiero hijos</h1>
+            
+            <p>Los hijos son un parásito que se gestan en el vientre</p>
+            
+            <h2>Las criaturas no son juguetes</h2>
 
-    <p id="1">A continuación el ejercicio numero 1:</p>
+            <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tiktok.com/%40614magic/video/7410556827101973766&ved=2ahUKEwjzj7GO-YiPAxUXr5UCHc4fEaYQwqsBegQIFBAE&usg=AOvVaw33VnyPWcV4kZxALrLHCL6s">Video de Tiktok que no vi</a>
 
-    <h1>No quiero hijos</h1>
-    
-    <p>Los hijos son un parásito que se gestan en el vientre</p>
-    
-    <h2>Las criaturas no son juguetes</h2>
+            <h3>A los hombres no los joden tanto con estos temas</h3>
 
-    <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tiktok.com/%40614magic/video/7410556827101973766&ved=2ahUKEwjzj7GO-YiPAxUXr5UCHc4fEaYQwqsBegQIFBAE&usg=AOvVaw33VnyPWcV4kZxALrLHCL6s">Video de Tiktok que no vi</a>
+            <img src="images/hombre-generico.png" alt="imagen de un hombre generico">
 
-    <h3>A los hombres no los joden tanto con estos temas</h3>
+            <h4>Estoy tan molesta que ya considero ser cínica y usar el humor para generar adrede incomodidad</h4>
 
-    <img src="images/hombre-generico.png" alt="imagen de un hombre generico">
+            <ol>
+                <li>Decir que soy transexual</li>
+                <li>Decir que soy infertil</li>
+                <li>Decir que mi pareja es infertil</li>
+                <li>Me ligue las trompas</li>
+            </ol>
 
-    <h4>Estoy tan molesta que ya considero ser cínica y usar el humor para generar adrede incomodidad</h4>
+            <h5>Quienes me irritaron con este tema:</h5>
 
-    <ol>
-        <li>Decir que soy transexual</li>
-        <li>Decir que soy infertil</li>
-        <li>Decir que mi pareja es infertil</li>
-        <li>Me ligue las trompas</li>
-    </ol>
+            <ul>
+                <li>Mi madre</li>
+                <li>Mi suegra</li>
+                <li>Amistades de mi madre</li>
+                <li>Mis amistades</li>
+                <li>Mi concuñado</li>
+                <li>Alguno que no recuerdo ahora</li>
+            </ul>
 
-    <h5>Quienes me irritaron con este tema</h5>
+            <h6>Despues de hacer catarsis me siento mejor igual me voy a ligar las trompas</h6>
+        </article>
 
-    <ul>
-        <li>Mi madre</li>
-        <li>Mi suegra</li>
-        <li>Amistades de mi madre</li>
-        <li>Mis amistades</li>
-        <li>Mi concuñado</li>
-        <li>Alguno que no recuerdo ahora</li>
-    </ul>
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
 
-    <h6>Despues de hacer catarsis me siento mejor igual me voy a ligar las trompas</h6>
+            <ul>
+                <li>Practicas con IA</li>
+                <li>Portafolio</li>
+                <li>Forestier</li>
+                <li>Resetario de Dino</li>
+                <li>Encuadernaciones Efaty250</li>
+                <li>Creaciones faty250</li>
+                <li>Abierto a ideas a futuro</li>
+            </ul>
+        </section>
 
-    <h2 id="proyectos">Mis proyectos</h2>
+        <section >
+            
+        </section>
 
-    <ul>
-        <li>Practicas con IA</li>
-        <li>Portafolio</li>
-        <li>Forestier</li>
-        <li>Resetario de Dino</li>
-        <li>Encuadernaciones Efaty250</li>
-        <li>Creaciones faty250</li>
-        <li>Abierto a ideas a futuro</li>
-    </ul>
+    </main>
 
-    <h2 id="contacto">Podés contactarme acá</h2>
+    <footer id="contacto">
+        <!--Que va en el footer? pie de pagina:
+        Información de contacto.
+        Redes sociales.
+        Derechos de autor.
+        Links legales (términos y condiciones, política de privacidad).-->
+        <h2>Podés contactarme acá</h2>
 
-    <a href="mailto">ejemplo@gmail.com</a>
-    <a href="phone">+54 12345678</a>
-    <a href="http://twitch/efaty250.com">twitch</a>
-    <a href="http://instagram/efaty250.com">instagram</a>
-    <a href="http://facebook/efaty250.com">facebook</a>
-    <a href="http://pinterest/efaty250.com">pinterest</a>
-
+        <a href="mailto:ejemplo@gmail.com">ejemplo@gmail.com</a>
+        <a href="tel:+54 12 34567890">+54 12 34567890</a>
+        <a href="http://twitch.tv/efaty250">twitch</a>
+        <a href="http://instagram.com/efaty250">instagram</a>
+        <a href="http://facebook.com/efaty250">facebook</a>
+        <a href="http://pinterest.com/efaty250">pinterest</a>
+    </footer>
 </body>
 </html>
